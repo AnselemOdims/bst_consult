@@ -3,13 +3,14 @@
 
   background: $accent-color-2;
   padding: 0.8rem 8%;
+  font-size: 1rem;
 
   > div {
     &:nth-of-type(1) {
       @include display(row, space-between, center);
 
       color: $white-color;
-      margin-right: 2.4rem;
+      margin-right: 1.6rem;
       p {
         margin: 0 12px
       }
@@ -34,12 +35,14 @@
 .bottom-header {
   @include display(row, space-between, center);
 
-  padding: 1.25rem 3% 1.25rem 7%;
+  padding: 1.25rem 3% 1rem 7%;
 
   > div {
     &:nth-of-type(1) {
+      @include display(row, center, center);
+
       img {
-        width: 100px;
+        width: 150px;
       }
     }
   }
@@ -57,7 +60,7 @@
         font-size: 1rem;
         line-height: 22px;
         letter-spacing: 0.85px;
-        margin-right: 2rem;
+        margin-right: 3rem;
         cursor: pointer;
 
         &:hover {
@@ -65,11 +68,12 @@
         }
 
         &:last-of-type {
-          padding: 15px;
+          padding: 0.8rem;
           background: $primary-color-1;
           color: $white-color;
           box-shadow: $shadow-2;
           transition: all ease-out 0.5s 0.3s;
+          margin-right: 2rem;
 
           &:hover {
             box-shadow: $shadow-1;
