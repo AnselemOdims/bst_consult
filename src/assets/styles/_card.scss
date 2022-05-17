@@ -11,7 +11,11 @@
             position: absolute;
             top: 0.4rem;
             right: -12px;
-        }
+            transition: all ease-out 0.5s 0.3s;
 
+            &:hover {
+                transform: scale(1.01)
+            }
+        }
     }
 }

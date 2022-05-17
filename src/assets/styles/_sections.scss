@@ -50,3 +50,41 @@
     }
   }
 }
+
+.clients {
+  @include display(column, center, center);
+
+  background: $neutral-color-5;
+  padding: 7rem 18rem 5rem 19rem;
+
+  h2 {
+    @include font-stack(normal, 500, 20px, 30px);
+
+    letter-spacing: 1.2px;
+    color: $primary-color-1;
+    margin: 0;
+    margin-bottom: 1.25rem
+  }
+
+  h3 {
+    @include font-stack(normal, 600, 36px, 49px);
+
+    margin: 0;
+    color: #313335;
+    margin-bottom: 3.2rem
+  }
+
+  > div {
+    @include display(row, center, center);
+
+    img {
+      margin: 0 25px;
+      width: 90%;
+      transition: all ease-out 0.5s 0.3s;
+
+      &:hover {
+          transform: scale(1.01)
+      }
+    }
+  }
+}
