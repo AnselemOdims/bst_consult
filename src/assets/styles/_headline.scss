@@ -39,7 +39,7 @@
         
         &:hover {
           background: $primary-color-1;
-          color: $white-color;
+          color: $white-color !important;
           box-shadow: $shadow-1;
         }
       }

@@ -1,11 +1,10 @@
-import Image from '../assets/images/about-card.png';
 
-const Card = () => {
+const Card = ({ src, hide }: {src:string, hide:boolean}) => {
     return ( 
         <div className="about-card">
-            <div />
+            {!hide && <div />}
             <div>
-                <img src={Image} alt="about-card"/>
+                <img src={src} alt="about-card"/>
             </div>
         </div>
      );
