@@ -24,9 +24,50 @@
                 h5 {
                     @include font-stack(normal, 600, 3.25rem, 3.1rem);
                     color: $white-color;
+                }
 
+            }
+
+            &.test-item {
+                .carousel-caption {
+                    position: relative;
+                    left: 25%;
+                
+                    h5 {
+                        @include font-stack(normal, 600, 2.8rem, 3.1rem);
+
+                        color: $white-color;
+                        text-align: center;
+                        width: 55%;
+                        margin: 0;
+                    }
+
+                    p {
+                        @include font-stack(normal, 400, 1.9rem, 1.6rem);
+
+                        text-align: center;
+                        color: $white-color;
+                        width: 50%;
+                        margin: 3rem 0 2rem;
+                    }
                 }
             }
+        }
+    }
+
+    &.test-carousel {
+        width: 100%;
+        margin: 0 20px;
+
+        .carousel-indicators {
+            bottom: -19%;
+            right: 0;
+        }
+        
+        &.carousel-dark .carousel-indicators [data-bs-target]{
+            background-color:  #C4C4C4;
+            width: 6.5rem;
+            margin: 0 0.8rem;
         }
     }
 }
@@ -36,5 +77,26 @@
 
     .details {
         width: 50%;
+    }
+}
+
+.testimonials {
+    @include display(column, center, center);
+
+    background: #1F1F20;
+    text-align: center;
+    padding: 103px 0 89px;
+
+    > div {
+        &:nth-of-type(1) {
+            h2 {
+                @include font-stack(normal, 500, 1.25rem, 30px);
+
+                letter-spacing: 1.2px;
+                margin: 0;
+                color: $primary-color-1;
+                margin-bottom: 26px;
+            }
+        }
     }
 }

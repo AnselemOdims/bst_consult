@@ -4,6 +4,7 @@ import Headline from '../components/Headline';
 import About from '../components/About';
 import Client from '../components/Clients';
 import Services from '../components/Services';
+import Testimonials from '../components/Testimonials';
 
 const Home = () => {
     return ( 
@@ -14,6 +15,7 @@ const Home = () => {
             <About />
             <Client />
             <Services />
+            <Testimonials />
         </main>
      );
 }
