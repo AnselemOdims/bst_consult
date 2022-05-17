@@ -32,7 +32,7 @@
 
         padding: 20px 30px;
         border: solid 2px $primary-color-1;
-        color: $primary-color-1;
+        color: $primary-color-1 !important;
         background: $white-color;
         letter-spacing: 3px;
         transition: all ease-out 0.5s 0.2s;

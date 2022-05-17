@@ -1,0 +1,40 @@
+.carousel {
+    width: 50%;
+    margin-right: 120px;
+
+    .carousel-indicators {
+        bottom: -19%;
+        right: 12%;
+    }
+
+    .carousel-indicators [data-bs-target]{
+        height: 0.625rem;
+        width: 6.5rem;
+        margin: 0 0.8rem;
+    }
+
+    .carousel-inner {
+
+        .carousel-item {
+            img {
+                height: 400px
+            }
+
+            .carousel-caption {
+                h5 {
+                    @include font-stack(normal, 600, 3.25rem, 3.1rem);
+                    color: $white-color;
+
+                }
+            }
+        }
+    }
+}
+
+.services {
+    padding: 142px 110px 142px 130px;
+
+    .details {
+        width: 50%;
+    }
+}
