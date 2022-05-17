@@ -9,8 +9,7 @@
   flex-direction: $direction;
 }
 
-@mixin font-stack($family1, $family2, $style, $weight, $size, $height) {
-  font-family: $family1, $family2;
+@mixin font-stack($style, $weight, $size, $height) {
   font-style: $style;
   font-weight: $weight;
   font-size: $size;

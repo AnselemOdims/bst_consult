@@ -1,0 +1,52 @@
+.about-container {
+  @include display(row, space-between, center);
+
+  padding: 142px 160px;
+
+  .details {
+    @include display(column, space-between, flex-start);
+
+    width: 45%;
+
+    h3 {
+      @include font-stack(normal, 500, 1.25rem, 30px);
+
+      margin: 0;
+      color: $primary-color-1;
+      margin-bottom: 22px;
+    }
+
+    h4 {
+      @include font-stack(normal, 500, 3.25rem, 49px);
+     
+      margin: 0;
+      color: #313335;
+      margin-bottom: 35px;
+    }
+
+    p {
+      @include font-stack(normal, 400, 1.25rem, 26px);
+
+      margin: 0;
+      width: 90%;
+      color: #808080;
+      margin-bottom: 45px;
+    }
+
+    a {
+      @include font-stack(normal, 600, 12px, 18px);
+
+      padding: 16px 20px;
+      border: solid 2px $primary-color-1;
+      color: $primary-color-1;
+      letter-spacing: 3px;
+      transition: all ease-out 0.5s 0.2s;
+
+      &:hover {
+        background: $primary-color-1;
+        color: $white-color;
+        box-shadow: $shadow-1;
+      }
+    }
+  }
+}

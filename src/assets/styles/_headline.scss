@@ -6,22 +6,20 @@
   > div {
     position: absolute;
     right: 9%;
-    top: 23%;
+    top: 20%;
     color: $white-color;
 
     h1 {
-      font-weight: 600;
-      font-size: 70px;
-      line-height: 71px;
+      @include font-stack(normal, 600, 70px, 71px);
+
       text-transform: uppercase;
       width: 600px;
       margin: 0 0 2rem;
     }
 
     p {
-      font-weight: 100;
-      font-size: 30px;
-      line-height: 40px;
+      @include font-stack(normal, 100, 30px, 40px);
+
       width: 520px;
       margin: 0
     }
@@ -30,11 +28,10 @@
       margin-top: 3.5rem;
 
       a {
+        @include font-stack(normal, 600, 12px, 18px);
+
         padding: 20px 30px;
         border: solid 2px $primary-color-1;
-        font-weight: 600;
-        font-size: 12px;
-        line-height: 18px;
         color: $primary-color-1;
         background: $white-color;
         letter-spacing: 3px;

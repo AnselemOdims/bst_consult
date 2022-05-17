@@ -4,6 +4,7 @@
 @import "normalize";
 @import "header";
 @import "headline";
+@import 'sections';
 
 /* General page settings */
 html {
@@ -30,6 +31,7 @@ body {
   overflow-x: hidden;
   position: relative;
   font-family: 'Maven Pro', sans-serif;
+  background: $neutral-color-4;
 }
 
 ul {
