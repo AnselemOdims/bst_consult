@@ -1,7 +1,7 @@
 .about-container {
   @include display(row, space-between, center);
 
-  padding: 142px 160px;
+  padding: 142px 110px 142px 160px;
 
   .details {
     @include display(column, space-between, flex-start);
