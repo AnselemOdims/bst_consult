@@ -2,14 +2,16 @@
   @include display(row, flex-end, center);
 
   background: $accent-color-2;
-  padding-right: 8%;
-  // color: $white-color;
+  padding: 0.8rem 8%;
 
   > div {
     &:nth-of-type(1) {
+      @include display(row, space-between, center);
+
       color: $white-color;
+      margin-right: 2.4rem;
       p {
-        margin-right: 2.4rem;
+        margin: 0 12px
       }
     }
 
@@ -24,6 +26,56 @@
         border-radius: 50px;
         margin: 0 7px;
         color: $accent-color-2;
+      }
+    }
+  }
+}
+
+.bottom-header {
+  @include display(row, space-between, center);
+
+  padding: 1.25rem 3% 1.25rem 7%;
+
+  > div {
+    &:nth-of-type(1) {
+      img {
+        width: 100px;
+      }
+    }
+  }
+
+  nav {
+
+    ul {
+      @include display(row, space-between, center);
+
+      margin: 0;
+
+      li {
+        font-weight: 500;
+        color: $accent-color-1;
+        font-size: 1rem;
+        line-height: 22px;
+        letter-spacing: 0.85px;
+        margin-right: 2rem;
+        cursor: pointer;
+
+        &:hover {
+          color: $primary-color-1;
+        }
+
+        &:last-of-type {
+          padding: 15px;
+          background: $primary-color-1;
+          color: $white-color;
+          box-shadow: $shadow-2;
+          transition: all ease-out 0.5s 0.3s;
+
+          &:hover {
+            box-shadow: $shadow-1;
+          }
+        }
+
       }
     }
   }

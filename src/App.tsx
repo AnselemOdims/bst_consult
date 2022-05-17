@@ -6,8 +6,8 @@ function App() {
   return (
     <div className="App">
       <TopHeader />
-      <h1>bst_consult</h1>
       <BottomHeader />
+      <h1>Headline Section</h1>
     </div>
   );
 }

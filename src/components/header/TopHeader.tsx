@@ -5,7 +5,9 @@ const TopHeader = () => {
     return ( 
         <div className="top-header">
             <div>
-                <p>Tel: +2348078601918  |  Email: bstconsults@gmail.com</p>
+                <p>Tel: +2348078601918</p>
+                <span>|</span>
+                <p>Email: bstconsults@gmail.com</p>
             </div>
             <div>
                 <a className="icon" href="#">
