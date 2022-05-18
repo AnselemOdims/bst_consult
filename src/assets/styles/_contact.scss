@@ -1,0 +1,125 @@
+.contact-section {
+    @include display(column, center, unset);
+
+    padding: 106px 24px 113px 160px;
+    background: $neutral-color-1;
+
+    h2, h3, p {
+        margin: 0;
+    }
+
+    h2 {
+        @include font-stack(normal, 500, 1.25rem, 30px);
+
+        letter-spacing: 1.2px;
+        color: $primary-color-1;
+        margin-bottom: 28px;
+    }
+
+    h3 {
+        @include font-stack(normal, 600, 3.25rem, 3.1rem);
+
+        color: #313335;
+        margin-bottom: 30px;
+    }
+
+    p {
+        @include font-stack(normal, 400, 1.25rem, 1.6rem);
+
+        color: $accent-color-1;
+        width: 49%;
+        margin-bottom: 50px;
+    }
+
+    > div {
+        @include display(row, space-between, unset);
+
+        position: relative;
+
+        .form-container {
+            width: 100%;
+
+            form {
+                @include display(column, space-between, unset);
+
+                width: 100%;
+
+                > div {
+                    &:nth-of-type(1) {
+                        @include display(row, unset, center);
+
+                        margin-bottom: 2.125rem;
+
+                        input {
+                            width: 19rem;
+                            height: 3.8rem;
+                            border: solid 2px $primary-color-1;
+                            padding-left: 28px;
+                            color: $primary-color-1;
+                            background: $white-color;
+
+                            &:last-of-type {
+                                margin-left: 2.5rem;
+                            }
+
+                            &::placeholder {
+                                @include font-stack(normal, 600, 12px, 1.125rem);
+
+                                color: $primary-color-1;
+                                letter-spacing: 3px;
+                            }
+                        }
+                    }
+
+                    > textarea {
+                        width: 40.5rem;
+                        height: 16rem;
+                        padding-left: 28px;
+                        padding-top: 2.6rem;
+                        border: solid 2px $primary-color-1;
+                        color: $primary-color-1;
+                        margin-bottom: 2.9rem;
+                        background: $white-color;
+
+                        &::placeholder {
+                            @include font-stack(normal, 600, 12px, 1.125rem);
+
+                            color: $primary-color-1;
+                            letter-spacing: 3px;
+                        }
+                    }
+
+                    button {
+                        @include font-stack(normal, 600, 12px, 1.125rem);
+
+                        color: $primary-color-1;
+                        letter-spacing: 3px;
+                        padding: 1.4rem 2.3rem;
+                        background: $white-color;
+                        border: solid 2px $primary-color-1;
+                    }
+                }
+            }
+        }
+
+        > div:last-of-type {
+            position: absolute;
+            right: 7%;
+            top: 15%;
+
+            > div {
+                @include display(row, center, center);
+                
+                margin-bottom: 1.25rem;
+
+                p {
+                    @include font-stack(normal, 500, 1.25rem, 1.625rem);
+
+                    margin: 0;
+                    margin-left: 12px;
+                    color: #4D4D4D;
+                }
+            }
+        }
+    }
+}
