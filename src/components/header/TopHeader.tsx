@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+
 import { FaFacebookF } from 'react-icons/fa';
 import { BsInstagram, BsTwitter } from 'react-icons/bs';
 

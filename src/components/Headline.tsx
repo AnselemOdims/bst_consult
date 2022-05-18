@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 
 const Healine = () => {
     return (
@@ -7,7 +8,7 @@ const Healine = () => {
                 <p>From consulting to management and development, we cover all the bases
 so you don't have to.</p>
                 <div>
-                    <a>MORE ABOUT US</a>
+                    <a href="#">MORE ABOUT US</a>
                 </div>
             </div>
         </section>

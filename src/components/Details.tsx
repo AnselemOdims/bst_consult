@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 interface DetailsProp {
     heading1: string;
     heading2: string;
@@ -11,7 +12,7 @@ const Details = ({ heading1, heading2, para, }: DetailsProp) => {
             <h4>{heading2}</h4>
             <p>{para}</p>
             <div>
-                <a>READ MORE</a>
+                <a href="#">READ MORE</a>
             </div>
         </div>
      );
